@@ -594,24 +594,28 @@
                     </div>
                 </div>
 
+            <!-- Formulário -->
                 <!-- Formulário -->
                 <div class="lg:col-span-7 p-8 sm:p-12 bg-white">
-                    <form id="lead-form" class="space-y-5">
+                    <form id="lead-form" action="https://formsubmit.co/thiagoligierads@gmail.com" method="POST" class="space-y-5">
+                        <input type="hidden" name="_subject" value="Novo Diagnóstico Tributário">
+                        <input type="hidden" name="_captcha" value="false">
+
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                             <div>
                                 <label for="nome" class="block text-xs font-bold uppercase tracking-wider text-brand-dark mb-2">Seu Nome *</label>
-                                <input type="text" id="nome" required placeholder="Ex: João Silva" class="w-full px-4 py-3 rounded-xl bg-brand-lightBg border border-slate-200 text-brand-dark text-sm focus:outline-none focus:border-brand-royal focus:bg-white transition-colors">
+                                <input type="text" id="nome" name="nome" required placeholder="Ex: João Silva" class="w-full px-4 py-3 rounded-xl bg-brand-lightBg border border-slate-200 text-brand-dark text-sm focus:outline-none focus:border-brand-royal focus:bg-white transition-colors">
                             </div>
                             <div>
                                 <label for="whatsapp" class="block text-xs font-bold uppercase tracking-wider text-brand-dark mb-2">WhatsApp com DDD *</label>
-                                <input type="tel" id="whatsapp" required placeholder="(11) 99999-9999" class="w-full px-4 py-3 rounded-xl bg-brand-lightBg border border-slate-200 text-brand-dark text-sm focus:outline-none focus:border-brand-royal focus:bg-white transition-colors">
+                                <input type="tel" id="whatsapp" name="whatsapp" required placeholder="(11) 99999-9999" class="w-full px-4 py-3 rounded-xl bg-brand-lightBg border border-slate-200 text-brand-dark text-sm focus:outline-none focus:border-brand-royal focus:bg-white transition-colors">
                             </div>
                         </div>
 
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                             <div>
                                 <label for="segmento" class="block text-xs font-bold uppercase tracking-wider text-brand-dark mb-2">Segmento de Atuação *</label>
-                                <select id="segmento" required class="w-full px-4 py-3 rounded-xl bg-brand-lightBg border border-slate-200 text-brand-dark text-sm focus:outline-none focus:border-brand-royal focus:bg-white transition-colors">
+                                <select id="segmento" name="segmento" required class="w-full px-4 py-3 rounded-xl bg-brand-lightBg border border-slate-200 text-brand-dark text-sm focus:outline-none focus:border-brand-royal focus:bg-white transition-colors">
                                     <option value="Mercado Digital">Mercado Digital (Infoprodutos / Agências)</option>
                                     <option value="Saúde">Área da Saúde (Médicos / Clínicas)</option>
                                     <option value="Criptoativos">Criptoativos & Investimentos</option>
@@ -620,7 +624,7 @@
                             </div>
                             <div>
                                 <label for="faturamento" class="block text-xs font-bold uppercase tracking-wider text-brand-dark mb-2">Faturamento / Volume Mensal</label>
-                                <select id="faturamento" class="w-full px-4 py-3 rounded-xl bg-brand-lightBg border border-slate-200 text-brand-dark text-sm focus:outline-none focus:border-brand-royal focus:bg-white transition-colors">
+                                <select id="faturamento" name="faturamento" class="w-full px-4 py-3 rounded-xl bg-brand-lightBg border border-slate-200 text-brand-dark text-sm focus:outline-none focus:border-brand-royal focus:bg-white transition-colors">
                                     <option value="Até R$ 20 mil">Até R$ 20 mil / mês</option>
                                     <option value="De R$ 20 mil a R$ 50 mil">De R$ 20 mil a R$ 50 mil / mês</option>
                                     <option value="De R$ 50 mil a R$ 150 mil">De R$ 50 mil a R$ 150 mil / mês</option>
@@ -631,7 +635,7 @@
 
                         <div>
                             <label for="mensagem" class="block text-xs font-bold uppercase tracking-wider text-brand-dark mb-2">Qual seu principal objetivo hoje?</label>
-                            <textarea id="mensagem" rows="3" placeholder="Ex: Hoje atuo como Pessoa Física e quero abrir CNPJ para pagar menos impostos..." class="w-full px-4 py-3 rounded-xl bg-brand-lightBg border border-slate-200 text-brand-dark text-sm focus:outline-none focus:border-brand-royal focus:bg-white transition-colors"></textarea>
+                            <textarea id="mensagem" name="mensagem" rows="3" placeholder="Ex: Hoje atuo como Pessoa Física e quero abrir CNPJ para pagar menos impostos..." class="w-full px-4 py-3 rounded-xl bg-brand-lightBg border border-slate-200 text-brand-dark text-sm focus:outline-none focus:border-brand-royal focus:bg-white transition-colors"></textarea>
                         </div>
 
                         <button type="submit" class="w-full py-4 px-6 rounded-xl bg-gradient-to-r from-brand-royal to-brand-cyan hover:opacity-95 text-white font-bold text-base shadow-lg shadow-brand-royal/25 transition-all flex items-center justify-center gap-2">
@@ -639,7 +643,7 @@
                             <i class="ph-bold ph-paper-plane-tilt"></i>
                         </button>
                     </form>
-
+                    
                     <!-- Mensagem de Confirmação (Substitui alert()) -->
                     <div id="form-feedback" class="hidden mt-6 p-5 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-900">
                         <div class="flex items-start gap-3">
