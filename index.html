@@ -381,7 +381,7 @@
                                 <button type="button" onclick="setCalcSegment('saude')" id="calc-btn-saude" class="calc-seg-btn py-2.5 px-3 rounded-xl text-xs sm:text-sm font-semibold bg-brand-dark/60 text-slate-300 border border-white/10 hover:border-brand-cyan/50 transition-all">
                                     Saúde
                                 </button>
-                                <button type="button" onclick="setCalcSegment('cripto')" id="calc-btn-cripto" class="calc-seg-btn py-2.5 px-3 rounded-xl text-xs sm:text-sm font-semibold bg-brand-dark/60 text-slate-300 border border-white/10 hover:border-brand-cyan/50 transition-all">
+                                <button type="button" onclick="setCalcSegment('cripto')" id="calc-btn-cripto" class="calc-seg-btn py-2.5 px-3 rounded-xl text-xs sm:text-sm font-semibold bg-brand-dark text-slate-300 border border-white/10 hover:border-brand-cyan/50 transition-all">
                                     Criptoativos
                                 </button>
                             </div>
@@ -500,7 +500,7 @@
                             >
                             <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-brand-dark via-brand-dark/80 to-transparent p-6">
                                 <p class="text-white font-display font-bold text-xl">Dra. Jessica Sales</p>
-                                <p class="text-brand-cyan text-sm font-medium">Contadora & Estrategista Tributária | CRC Ativo</p>
+                                <p class="text-brand-cyan text-sm font-medium">Contadora & Estrategista Tributária | CRC CE-022451/O-2</p>
                             </div>
                         </div>
                         
@@ -790,7 +790,7 @@
             // Atualiza estilo dos botões das abas
             document.querySelectorAll('.segment-btn').forEach(btn => {
                 btn.classList.remove('bg-brand-dark', 'text-white', 'shadow-lg');
-                btn.classList.add('bg-white', 'text-brand-dark', 'border', 'border-slate-200');
+                btn.classList.add('bg-dark', 'text-brand-dark', 'border', 'border-slate-200');
                 const icon = btn.querySelector('i');
                 if (icon) {
                     icon.classList.remove('text-brand-cyan');
